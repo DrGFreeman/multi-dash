@@ -11,6 +11,22 @@ Branch `multi-page-app` demonstrates a single, multi-page application as describ
 #### Cons
 * This is essentially a single application displayed on multiple pages so all `id`s of layout elements used in callbacks must be unique (i.e. two different pages cannot use the same `id` for different elements)
 
+### App file structure
+
+For demonstation purpose, `app1` is contained in a sub-folder with seperate files and *\_\_init\_\_.py* file whereas `app2` is packaged in a single file.
+
+```
+├── apps
+│   ├── app1
+│   │   ├── callbacks.py
+│   │   ├── __init__.py
+│   │   └── layout.py
+│   ├── app2.py
+│   └── __init__.py
+├── app.py
+└── index.py
+```
+
 ### Usage
 
 Run the application with the Flask development server
