@@ -1,9 +1,11 @@
 from datetime import datetime
 
+import dash
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-from app import app
+app = dash.Dash(__name__, requests_pathname_prefix='/app1/')
+app.title = 'App2'
 
 layout = html.Div([
     html.H1('App2'),
@@ -14,6 +16,8 @@ layout = html.Div([
     html.Br(),
     html.A('App1', href='/app1'),
 ])
+
+app.layout = layout
 
 @app.callback(Output('placeholder', 'children'),
               [Input('update_button', 'n_clicks')])
