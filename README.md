@@ -20,9 +20,9 @@ For demonstation purpose, `app1` is split in seperate files whereas `app2` is pa
 ├── app1
 │   ├── callbacks.py
 │   ├── __init__.py
-│   ├── layout.py
+│   └── layout.py
 ├── app2
-│   ├── __init__.py
+│   └── __init__.py
 ├── flask_app.py
 └── wsgi.py
 ```
