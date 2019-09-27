@@ -9,7 +9,7 @@ The [`independent-apps`](https://github.com/DrGFreeman/multi-dash/tree/independe
 * The two app are totally independent.
 
 #### Cons
-* The Flask development server cannot be used.
+* The Flask development server cannot be used. However, the werkzeug server can be used for development. See example in [wz.py](wz.py).
 
 ### App file structure
 
